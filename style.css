@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:violet;
+}
+
+.container{
+    background:white;
+    border-radius:10px;
+    max-width:425px;
+    flex-grow:1;
+    box-shadow:0 10px 20px rgba(0,0,0, 0.1);
+}
+
+.search-section .input-wrapper{
+    height:54px;
+    width:100%;
+    position:relative;
+}
+
+.search-section .input-wrapper span{
+    position:absolute;
+    top:50%;
+    left:17px;
+    transform:translateY(-50%);
+}
+
+.search-section .seach-input{
+    height:100%;
+    width:100%;
+    outline:none;
+    font-size:1rem;
+    font-weight:500;
+    text-transform:uppercase;
+    padding:0 20px 0 50px;
+    border-radius:6px;
+    border:1px solid pink;
+}
+
+.search-section  .search-input::placeholder{
+    text-transform:none;
+}
+
+.search-section .location-button{
+    height:54px;
+    width:56px;
+    outline:none;
+    cursor:pointer;
+    color:violet;
+    background: wheat;
+    border-radius:6px;
+    border:1px solid violet;
+    transition:0.3s ease;
+}
+
+.search-section  .search-input:focus{
+    border-color:violet;
+}
+
+.search-section  .search-input::placeholder{
+    text-transform:none;
+}
+
+.hourly-weather .weather-list{
+    display:flex;
+}
+
+.hourly-weather .weather-list{
+    display:flex;
+    list-style:none;
+    gap:43px;
+    overflow-x:auto;
+    scrollbar-width:thin;
+    scrollbar-color:transparent transparent;
+}
+
+.hourly-weather:hover  .weather-list{
+    scrollbar-color:white transparent;
+}
+
+.hourly-weather .weather-item{
+    display:flex;
+    gap:7px;
+    font-weight:500;
+    align-items:center;
+    flex-direction:column;
+}
+
+
